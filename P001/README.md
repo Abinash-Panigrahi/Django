@@ -19,7 +19,7 @@ P001/
     │   ├── urls.py          ← URL declarations
     │   ├── asgi.py          ← ASGI configuration
     │   └── wsgi.py          ← WSGI configuration
-    └── MsgApp/              ← First auto-created app folder
+    └── MsgApp/              ← First manually created app folder
 ```
 
 ## 🚀 How to Run
