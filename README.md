@@ -10,6 +10,7 @@
 |--------|-------------|
 | `P001` | Setting up the very first Django project |
 | `P002` | Displaying current date and time using a Django view and HttpResponse |
+| `P003` | Multiple apps with app-level URL routing using include() |
 
 ---
 
