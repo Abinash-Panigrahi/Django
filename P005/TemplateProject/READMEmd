@@ -1,0 +1,59 @@
+# P005 — Rendering HTML Templates
+
+## 📌 About
+This project introduces Django's template system — instead of returning plain text or inline HTML via `HttpResponse`, this project renders a proper `.html` file using Django's `render()` function.
+
+## 🎯 What This Covers
+- Creating a `templates/` folder and configuring it in `settings.py`
+- Using `render()` instead of `HttpResponse` to return HTML pages
+- Understanding how Django locates and loads template files
+- Connecting templates to views and URLs
+
+## 👀 How It Works
+
+**settings.py** — telling Django where to find templates:
+```python
+'DIRS': [BASE_DIR / 'templates'],
+```
+
+**views.py** — rendering an HTML file instead of returning plain text:
+```python
+def Odisha(request):
+    return render(request, 'TemplateApp/Odisha.html')
+```
+
+**App-level urls.py:**
+```python
+path('odisha/', views.Odisha),
+```
+
+So the full URL is → `http://127.0.0.1:8000/TemplateApp/odisha/`
+
+## 📁 Project Structure
+```
+P005/
+└── TemplateProject/
+    ├── manage.py
+    ├── templates/               ← Global templates folder
+    │   └── TemplateApp/
+    │       └── Odisha.html      ← HTML file rendered by the view
+    ├── TemplateProject/         ← Project config
+    │   ├── settings.py          ← DIRS configured to point to templates/
+    │   └── urls.py              ← Connects TemplateApp using include()
+    └── TemplateApp/
+        ├── views.py             ← Odisha() view using render()
+        └── urls.py              ← App level URL mapping
+```
+
+## 🚀 How to Run
+```bash
+cd TemplateProject
+python manage.py runserver
+```
+
+Then open `http://127.0.0.1:8000/TemplateApp/odisha/` in your browser.
+
+## 🛠️ Tech Used
+- Python
+- Django
+- HTML
