@@ -1,0 +1,66 @@
+# P006 — Passing Dynamic Data to HTML Templates
+
+## 📌 About
+This project introduces **template context** — passing dynamic Python data (current time) from a view into an HTML template using a dictionary.
+
+## 🎯 What This Covers
+- Using `datetime` module to get the current time
+- Formatting time using `strftime()`
+- Passing dynamic data from view to template using a **context dictionary**
+- Rendering the data inside an HTML template using Django template variables `{{ }}`
+
+## 👀 How It Works
+
+**views.py** — fetching time and passing it to the template:
+```python
+def time_view(request):
+    current_datetime = datetime.now()
+    time = current_datetime.strftime('%H:%M:%S')
+    d = {'time': time}
+    return render(request, 'TemplateApp/home.html', d)
+```
+
+The dictionary key `time` is accessed in the HTML template using Django's template syntax (Jinja-style `{{ }}`):
+
+```html
+<h2>Current time : {{ time }}</h2>
+```
+
+Django replaces `{{ time }}` with the actual value passed from the view — this is called **template variable rendering**. Whatever key you pass in the context dictionary, you access it the same way in HTML using `{{ key_name }}`.
+
+**App-level urls.py:**
+```python
+path('time/', views.time_view),
+```
+
+So the full URL is → `http://127.0.0.1:8000/TemplateApp/time/`
+
+## 📁 Project Structure
+```
+P006/
+└── TemplateProject/
+    ├── manage.py
+    ├── templates/
+    │   └── TemplateApp/
+    │       └── home.html         ← Displays {{ time }} from context
+    ├── TemplateProject/
+    │   ├── settings.py
+    │   └── urls.py               ← Connects TemplateApp using include()
+    └── TemplateApp/
+        ├── views.py              ← Fetches time, passes as context dict
+        └── urls.py               ← App level URL mapping
+```
+
+## 🚀 How to Run
+```bash
+cd TemplateProject
+python manage.py runserver
+```
+
+Then open `http://127.0.0.1:8000/TemplateApp/time/` in your browser.
+
+## 🛠️ Tech Used
+- Python
+- Django
+- HTML
+- Python `datetime` module
