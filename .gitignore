@@ -79,3 +79,12 @@ logs/
 tmp/
 *.tmp
 *.bak
+
+# ========================
+# Large Media & Video Files
+# ========================
+*.mp4
+*.mov
+*.avi
+*.mkv
+*.webm
