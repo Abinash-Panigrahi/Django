@@ -15,6 +15,8 @@
 | `P005` | Rendering HTML templates using Django's render() function |
 | `P006` | Passing dynamic data to HTML templates using context dictionary |
 | `P007` | Configuring and serving static files (CSS, Images, Videos) using `STATICFILES_DIRS` and `{% load static %}` |
+| `P008` | Django Models with MySQL database — securing credentials using `.env` file and `python-dotenv` |
+
 
 ---
 
