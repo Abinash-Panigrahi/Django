@@ -65,6 +65,8 @@ RealTimeProject/**/settings.py
 .env
 .env.*
 *.env
+# Ignore everything except this file
+!.env.example
 
 # ========================
 # Virtual Environment
