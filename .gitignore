@@ -19,13 +19,52 @@ staticfiles/
 static_root/
 
 # ========================
+# Django Settings (Security)
+# — Applied from P010 onwards only
+# — P001 to P009 settings.py are already tracked, not touching them
+# ========================
+P010/**/settings.py
+P011/**/settings.py
+P012/**/settings.py
+P013/**/settings.py
+P014/**/settings.py
+P015/**/settings.py
+P016_Assignment/**/settings.py
+P017/**/settings.py
+P019/**/settings.py
+P020/**/settings.py
+P021/**/settings.py
+P022/**/settings.py
+P023/**/settings.py
+P024/**/settings.py
+P026/**/settings.py
+P028/**/settings.py
+P029/**/settings.py
+P030/**/settings.py
+P031/**/settings.py
+P032/**/settings.py
+P033_Project/**/settings.py
+P034_Project/**/settings.py
+P035_Project_2_c/**/settings.py
+P037/**/settings.py
+P038/**/settings.py
+P039/**/settings.py
+P040/**/settings.py
+P041/**/settings.py
+P042_Project/**/settings.py
+P043/**/settings.py
+P044/**/settings.py
+Django_using_if-else/**/settings.py
+PP/**/settings.py
+Practice1/**/settings.py
+RealTimeProject/**/settings.py
+
+# ========================
 # Environment Variables
 # ========================
 .env
 .env.*
 *.env
-# Ignore everything except this file
-!.env.example
 
 # ========================
 # Virtual Environment
@@ -65,7 +104,11 @@ Desktop.ini
 # ========================
 htmlcov/
 .coverage
+.coverage.*
 .pytest_cache/
+coverage.xml
+nosetests.xml
+test-results/
 
 # ========================
 # Build
@@ -73,6 +116,8 @@ htmlcov/
 build/
 dist/
 *.egg-info/
+*.egg
+wheels/
 
 # ========================
 # Logs & Temp
@@ -81,6 +126,8 @@ logs/
 tmp/
 *.tmp
 *.bak
+*.swp
+*.swo
 
 # ========================
 # Large Media & Video Files
@@ -90,3 +137,58 @@ tmp/
 *.avi
 *.mkv
 *.webm
+
+# ========================
+# Database Dumps
+# ========================
+*.sql
+*.dump
+*.sqlite
+*.db
+
+# ========================
+# Celery
+# ========================
+celerybeat-schedule
+celerybeat.pid
+
+# ========================
+# Redis
+# ========================
+*.rdb
+
+# ========================
+# Docker
+# ========================
+docker-compose.override.yml
+.dockerenv
+
+# ========================
+# Node / Frontend (if used with Django)
+# ========================
+node_modules/
+npm-debug.log*
+yarn-error.log*
+
+# ========================
+# SSL / HTTPS
+# ========================
+*.crt
+*.csr
+*.p12
+*.pfx
+
+# ========================
+# AWS / Cloud Credentials
+# ========================
+.aws/
+.gcloud/
+.azure/
+serviceAccountKey.json
+
+# ========================
+# MyPy
+# ========================
+.mypy_cache/
+.dmypy.json
+dmypy.json

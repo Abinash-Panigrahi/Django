@@ -1,0 +1,20 @@
+{% extends 'RTPApp/index.html' %}
+
+{% block content %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Sign-Up Successful</h1>
+    <a href="{% url 'sign_in' %}">
+        <button type="button" class="btn btn-light"><i>Sign-in</i></button>
+      </a>
+</body>
+</html>
+
+{% endblock %}

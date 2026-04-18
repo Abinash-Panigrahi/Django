@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>About country </h2>
+
+    <table>
+        <tr>
+            <th>Id</th>
+            <th>Country</th>
+            <th>Capital</th>
+            <th>Population</th>
+            <th>Read more</th>
+        </tr>
+
+    {% for i in all_records %}
+
+    <tr>
+        <td> {{i.id}} </td>
+        <td> {{i.country}} </td>
+        <td> {{i.capital}} </td>
+        <td> {{i.population}} </td>
+        <td><a href="{% url 'specific_record' i.id %}" target="_blank"> {{i.readmore}} </a></td>
+    </tr>
+
+    {% endfor %}
+    </table>
+</body>
+</html>

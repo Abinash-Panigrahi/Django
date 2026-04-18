@@ -1,0 +1,9 @@
+h1{
+    background-image: linear-gradient(grey,blue);
+    color: yellow;
+}
+
+p{
+    background-image: linear-gradient(white,black);
+    color: darkmagenta;
+}

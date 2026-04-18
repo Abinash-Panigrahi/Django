@@ -1,0 +1,23 @@
+
+.c1{
+    background-image: url(/static/img/black_and_white.jpg); 
+    height: 1000px; 
+    width: 1600px; 
+    background-size: cover;
+}
+
+.c2{
+    padding-top: 100px; 
+    padding-left: 300px;
+    color: black;
+}
+
+.c3{
+    background-color: rgba(255, 255, 255, 0.2);
+    height: 400px; 
+    width: 900px; 
+    padding-top: 40px;
+}
+.c4{
+    color: aliceblue;
+}

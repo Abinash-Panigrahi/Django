@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Resume Done</title>
+</head>
+<body>
+    <h1>{{ resume.name }}'s Resume</h1>
+    <p>Age: {{ resume.age }}</p>
+    <p>Address 1: {{ resume.address1 }}</p>
+    <p>Address 2: {{ resume.address2 }}</p>
+    <p>State: {{ resume.state }}</p>
+    <p>City: {{ resume.city }}</p>
+    <p>Email: {{ resume.email }}</p>
+    <p>Mobile: {{ resume.mobile }}</p>
+    <p>LinkedIn: <a href="{{ resume.linkedin }}">{{ resume.linkedin }}</a></p>
+    <p>GitHub: <a href="{{ resume.github }}">{{ resume.github }}</a></p>
+    <h2>{{ resume.designation }}</h2>
+    <p>Summary: {{ resume.summary }}</p>
+    <h3>Experience</h3>
+    <p>Company Details: {{ resume.experience_company_details }}</p>
+    <p>Experience: {{ resume.experience }}</p>
+</body>
+</html>

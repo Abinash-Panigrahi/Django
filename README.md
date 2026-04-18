@@ -17,7 +17,42 @@
 | `P007` | Configuring and serving static files (CSS, Images, Videos) using `STATICFILES_DIRS` and `{% load static %}` |
 | `P008` | Django Models with MySQL database — securing credentials using `.env` file and `python-dotenv` |
 | `P009` | Fetching and displaying all database records in an HTML table using Django ORM and template for loop |
+| `P010` | — |
+| `P011` | — |
+| `P012` | — |
+| `P013` | — |
+| `P014` | — |
+| `P015` | — |
+| `P016_Assignment` | — |
+| `P017` | — |
+| `P019` | — |
+| `P020` | — |
+| `P021` | — |
+| `P022` | — |
+| `P023` | — |
+| `P024` | — |
+| `P026` | — |
+| `P028` | — |
+| `P029` | — |
+| `P030` | — |
+| `P031` | — |
+| `P032` | — |
+| `P033_Project` | — |
+| `P034_Project` | — |
+| `P035_Project_2_c` | — |
+| `P037` | — |
+| `P038` | — |
+| `P039` | — |
+| `P040` | — |
+| `P041` | — |
+| `P042_Project` | — |
+| `P043` | — |
+| `P044` | — |
+| `Django_using_if-else` | — |
+| `PP` | — |
+| `Practice1` | — |
+| `RealTimeProject` | — |
 
 ---
 
-> ⏳ More projects being added gradually — from beginner to advanced.
+> 📝 Descriptions will be added to each folder progressively.
